@@ -1,0 +1,14 @@
+📄 RAW YAML:
+name: Check /status
+steps:
+  - name: GET /status
+    request:
+      method: GET
+      url: http://127.0.0.1:5000/status
+    assert:
+      status_code: 200
+      body:
+        message: "API is working"
+
+✅ Scenario Loaded: {'name': 'Check /status', 'steps': [{'name': 'GET /status', 'request': {'method': 'GET', 'url': 'http://127.0.0.1:5000/status'}, 'assert': {'status_code': 200, 'body': {'message': 'API is working'}}}]}
+Validating step: GET /status
